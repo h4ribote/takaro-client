@@ -9,13 +9,10 @@ data = (response.text)
 
 data = json.loads(data)
 
-print(data)
-
-"""
 if ('error' in data):
     print(data['error'])
 else:
     for data2 in data:
         print(data2['amount']+data2['unit']+"\n")
-"""
+
 input("press enter to exit")
